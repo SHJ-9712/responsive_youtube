@@ -14,9 +14,100 @@
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" integrity="sha384-9/D4ECZvKMVEJ9Bhr3ZnUAF+Ahlagp1cyPC7h5yDlZdXs4DQ/vRftzfd+2uFUuqS" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header>
+        <h1 class="logo">
+            <a href="#">
+                <img src="images/youtube_logo.png">
+                Youtube
+            </a>
+        </h1>
+        <div class="icons">
+            <button type="button" class="search-icon">
+                <i class="fas fa-search"></i>
+            </button>
+            <button type="button" class="dotMenu-icon">
+                <i class="fas fa-ellipsis-v"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Video Player -->
+    <section class="player">
+        <video controls playsinline>
+            <source src="video/Prismo - Hold On [NCS Official Video].mp4" type="video/mp4">
+            <source src="video/Prismo - Hold On [NCS Official Video].webm" type="video/webm">
+        </video>
+    </section>
+    <!-- Video Info & Up next -->
+    <section class="infoWrap">
+        <article class="info">
+            <div class="tag">
+                <a href="#">CloneCoding</a>
+                <a href="#">portfolio</a>
+                <a href="#">NCS</a>
+            </div>
+            <h2 class="video-title">Prismo - Hold On [NCS Official Video]</h2>
+            <div class="viewDate">
+                <div class="view">
+                    <p>조회수 69,793회</p>
+                </div>
+                <div class="date">
+                    <p>게시일:2020. 12. 30.</p>
+                </div>
+            </div>
+            <div class="actions">
+                <ul>
+                    <li>
+                        <button>
+                            <i class="fas fa-thumbs-up"></i>
+                            <span>2.9천</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-thumbs-down"></i>
+                            <span>36</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-share"></i>
+                            <span>공유</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                            <span>저장</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class="fas fa-flag"></i>
+                            <span>신고</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="channel">
+                <a href="#">
+                    <img class="profile-icon" src="images/profile.jpg">
+                    <h3>신혁준</h3>
+                    <p>구독자 165만명</p>
+                </a>
+                <button>구독</button>
+            </div>
+            <div class="user-text">
+                Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 포트폴리오
+                NCS: Music Without Limitations.
+            </div>
+        </article>
+        <article class="upNext"></article>
+    </section>
 </body>
 </html>
