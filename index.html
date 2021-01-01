@@ -23,19 +23,20 @@
     <header>
         <h1 class="logo">
             <a href="#">
-                <img src="images/youtube_logo.png">
+                <img src="images/youtube_logo.png" alt="">
                 Youtube
             </a>
         </h1>
         <div class="icons">
-            <button type="button" class="search-icon">
+            <button type="button" class="search font-icon">
                 <i class="fas fa-search"></i>
             </button>
-            <button type="button" class="dotMenu-icon">
+            <button type="button" class="dot-menu font-icon">
                 <i class="fas fa-ellipsis-v"></i>
             </button>
         </div>
     </header>
+
     <!-- Video Player -->
     <section class="player">
         <video controls playsinline>
@@ -43,71 +44,179 @@
             <source src="video/Prismo - Hold On [NCS Official Video].webm" type="video/webm">
         </video>
     </section>
+    
     <!-- Video Info & Up next -->
     <section class="infoWrap">
-        <article class="info">
+        <!-- Video Info -->
+        <article class="video-content">
             <div class="tag">
                 <a href="#">CloneCoding</a>
                 <a href="#">portfolio</a>
                 <a href="#">NCS</a>
             </div>
-            <h2 class="video-title">Prismo - Hold On [NCS Official Video]</h2>
-            <div class="viewDate">
-                <div class="view">
-                    <p>조회수 69,793회</p>
+            <button type="button" class="info">
+                <div class="more-content">
+                    <h2 class="video-title">Clone Coding: Youtube Mobile Website Prismo - Hold On [NCS Official Video]</h2>
+                    <span class="font-icon">
+                        <i class="fas fa-chevron-down"></i>
+                    </span>
                 </div>
-                <div class="date">
-                    <p>게시일:2020. 12. 30.</p>
+                <div class="viewDate">
+                    <div class="secondary-text view">조회수 69,793회</div>
+                    <div class="secondary-text date">게시일:2020. 12. 30.</div>
                 </div>
-            </div>
+            </button>
             <div class="actions">
                 <ul>
                     <li>
-                        <button>
-                            <i class="fas fa-thumbs-up"></i>
-                            <span>2.9천</span>
+                        <button type="button">
+                            <span class="font-icon"><i class="fas fa-thumbs-up"></i></span>
+                            <span class="alt">2.9천</span>
                         </button>
                     </li>
                     <li>
-                        <button>
-                            <i class="fas fa-thumbs-down"></i>
-                            <span>36</span>
+                        <button type="button">
+                            <span class="font-icon"><i class="fas fa-thumbs-down"></i></span>
+                            <span class="alt">36</span>
                         </button>
                     </li>
                     <li>
-                        <button>
-                            <i class="fas fa-share"></i>
-                            <span>공유</span>
+                        <button type="button">
+                            <span class="font-icon"><i class="fas fa-share"></i></span>
+                            <span class="alt">공유</span>
                         </button>
                     </li>
                     <li>
-                        <button>
-                            <i class="fas fa-plus"></i>
-                            <span>저장</span>
+                        <button type="button">
+                            <span class="font-icon"><i class="fas fa-plus"></i></span>
+                            <span class="alt">저장</span>
                         </button>
                     </li>
                     <li>
-                        <button>
-                            <i class="fas fa-flag"></i>
-                            <span>신고</span>
+                        <button type="button">
+                            <span class="font-icon"><i class="fas fa-flag"></i></span>
+                            <span class="alt">신고</span>
                         </button>
                     </li>
                 </ul>
             </div>
             <div class="channel">
                 <a href="#">
-                    <img class="profile-icon" src="images/profile.jpg">
-                    <h3>신혁준</h3>
-                    <p>구독자 165만명</p>
+                    <div class="profile-icon">
+                        <img class="profile-icon" src="images/profile.jpg" alt="">
+                    </div>
+                    <div class="user-info">
+                        <h3>신혁준</h3>
+                        <span>구독자 165만명</span>
+                    </div>
                 </a>
-                <button>구독</button>
+                <button class="subscription">구독</button>
             </div>
-            <div class="user-text">
-                Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 포트폴리오
-                NCS: Music Without Limitations.
-            </div>
+            <div class="video-description">Clone Coding: Youtube Mobile Website AEI(NCS 대행); UNIAO BRASILEIRA DE EDITORAS DE MUSICA - UBEM, BMI - Broadcast Music Inc., LatinAutor - PeerMusic, LatinAutor - SonyATV, LatinAutor - Warner Chappell, Abramus Digital, LatinAutorPerf, Featherstone Music (publishing) 및 음악 권리 단체 9개</div>
         </article>
-        <article class="upNext"></article>
+        <!-- Up next -->
+        <article class="upNext">
+            <div class="next-box">
+                <h3>다음 동영상</h3>
+                <div class="autoPlay-toggle">
+                    <label for="autoPlay">자동재생</label>
+                    <button type="button" id="autoPlay">
+                        <div class="toggle-track"></div>
+                        <div class="toggle-circle"></div>
+                    </button>
+                </div>
+            </div>
+            <ul>
+                <li class="item">
+                    <a href="#">
+                        <div class="thoumb">
+                            <img src="images/thoumb1.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h4 class="item-headline">NEFFEX - Grateful [Copyright Free]</h4>
+                            <div class="sub-head">
+                                <span class="name">NEFFEX</span>
+                                <span class="view">조회수 8791만회</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="thoumb">
+                            <img src="images/thoumb2.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h4 class="item-headline">Prismo - Weakness [NCS Release]</h4>
+                            <div class="sub-head">
+                                <span class="name">NoCopyrightSounds</span>
+                                <span class="view">조회수 1927만회</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="thoumb">
+                            <img src="images/thoumb3.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h4 class="item-headline">Wiz Khalifa - See You Again ft. Charlie Puth [Official Video] Furious 7 Soundtrack</h4>
+                            <div class="sub-head">
+                                <span class="name">Wiz Khalifa</span>
+                                <span class="view">조회수 48억회</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="#">
+                        <div class="thoumb">
+                            <img src="images/thoumb4.jpg" alt="">
+                        </div>
+                        <div class="item-info">
+                            <h4 class="item-headline">Vicetone - Nevada (ft. Cozi Zuehlsdorff)</h4>
+                            <div class="sub-head">
+                                <span class="name">WaveMusic</span>
+                                <span class="view">조회수 4375만회</span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </article>
     </section>
+
+    <!-- comment -->
+    <section class="comments-wrap">
+        <div class="comment">
+            <button type="button" class="more-comment">
+                <div class="number">
+                    <h4>댓글 • 2,004개</h4>
+                </div>
+                <span class="font-icon">
+                    <i class="fas fa-chevron-down"></i>
+                </span>
+            </button>
+            <div class="commenting">
+                <div class="profile-icon">
+                    <img src="images/profile.jpg" alt="">
+                </div>
+                <div class="comment-form">
+                    <form action="#" method="POST">
+                        <fieldset>
+                            <legend class="blind">댓글 추가</legend>
+                            <textarea placeholder="공개 댓글 추가..." required></textarea>
+                            <div class="comment-box">
+                                <button type="reset">취소</button>
+                                <button type="submit">등록</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="js/script.js"></script>
 </body>
 </html>
