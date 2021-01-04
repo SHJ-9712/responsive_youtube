@@ -82,7 +82,6 @@ header .icons button {
 }
 .infoWrap .video-content .actions ul {
     display: flex;
-    justify-content: space-between;
 }
 .infoWrap .video-content .actions ul li {
     width: 100%;
@@ -137,10 +136,10 @@ header .icons button {
     border-bottom: 1px solid var(--grey-light-color);
 }
 /* Up next */
-.infoWrap .upNext {
+.upNext {
     margin: var(--spacing);
 }
-.infoWrap .upNext .next-box {
+.upNext .next-box {
     margin-bottom: var(--spacing);
     display: -webkit-flex;
     display: flex;
@@ -150,20 +149,20 @@ header .icons button {
     font-size: var(--font-medium);
     color: var(--grey-dark-color);
 }
-.infoWrap .upNext .next-box .autoPlay-toggle {
+.upNext .next-box .autoPlay-toggle {
     display: flex;
     align-items: center;
 }
-.infoWrap .upNext .next-box .autoPlay-toggle label {
+.upNext .next-box .autoPlay-toggle label {
     margin-right: 8px;
 }
-.infoWrap .upNext .next-box .autoPlay-toggle #autoPlay {
+.upNext .next-box .autoPlay-toggle #autoPlay {
     width: 40px;
     height: 20px;
     display: inline-block;
     position: relative;
 }
-.infoWrap .upNext .next-box .autoPlay-toggle #autoPlay .toggle-track {
+.upNext .next-box .autoPlay-toggle #autoPlay .toggle-track {
     width: 100%;
     height: 100%;
     background: var(--grey-light-color);
@@ -171,7 +170,7 @@ header .icons button {
     position: absolute;
     top: 0;
 }
-.infoWrap .upNext .next-box .autoPlay-toggle #autoPlay .toggle-circle {
+.upNext .next-box .autoPlay-toggle #autoPlay .toggle-circle {
     width: 50%;
     height: 100%;
     background: var(--grey-dark-color);
@@ -179,23 +178,23 @@ header .icons button {
     position: absolute;
     top: 0;
 }
-.infoWrap .upNext ul .item {
+.upNext ul .item {
     margin-bottom: var(--spacing);
 }
-.infoWrap .upNext ul .item a {
+.upNext ul .item a {
     display: flex;
 }
-.infoWrap .upNext ul .item .thoumb img {
+.upNext ul .item .thoumb img {
     width: 160px;
     height: 90px;
 }
-.infoWrap .upNext ul .item .item-info {
+.upNext ul .item .item-info {
     padding: 0 var(--spacing);
 }
-.infoWrap .upNext ul .item .item-info .item-headline {
+.upNext ul .item .item-info .item-headline {
     font-size: var(--font-medium);
 }
-.infoWrap .upNext ul .item .item-info .sub-head {
+.upNext ul .item .item-info .sub-head {
     display: flex;
     flex-direction: column;
     font-size: var(--font-small);
