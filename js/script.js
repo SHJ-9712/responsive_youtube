@@ -1,3 +1,15 @@
+// header 검색창
+const defaultHeader = document.querySelector('.default-header');
+const search = document.querySelector('.search-on');
+function searchForm() {
+    defaultHeader.style.display = "none";
+    search.style.display = "flex";
+}
+function back() {
+    defaultHeader.style.display = "flex";
+    search.style.display = "none";
+}
+
 // 동영상 설명 더보기 버튼
 document.querySelector('.info').onclick = function() {
     document.querySelector('.video-description').classList.toggle('block');
@@ -13,5 +25,6 @@ document.getElementById('autoPlay').onclick = function() {
 // 댓글 더보기 버튼
 document.querySelector('.more-comment').onclick = function() {
     document.querySelector('.commenting').classList.toggle('flex');
+    document.querySelector('.watch-next-results').classList.toggle('block');
     document.querySelector('.more-comment .font-icon').classList.toggle('more-btn');
 }

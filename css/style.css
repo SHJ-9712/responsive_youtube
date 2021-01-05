@@ -3,26 +3,52 @@
 header {
     width: 100%;
     padding: 0 var(--spacing);
-    display: flex;
-    justify-content: space-between;
-    line-height: 48px;
+    height: 48px;
     color: var(--white-color);
     background: var(--black-color);
     z-index: 100;
 }
+header .default-header {
+    display: flex;
+    justify-content: space-between;
+}
 header .logo a {
     display: inline-block;
     font-size: var(--font-large);
-    line-height: 24px;
+    line-height: 48px;
 }
 header .logo img {
     width: 35px;
     height: 24px;
+    vertical-align: sub;
 }
 header .icons button {
     margin-left: var(--spacing);
     font-size: var(--font-large);
     color: var(--white-color);
+}
+header .search-on {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: space-between;
+}
+header .search-on button {
+    color: var(--white-color);
+    height: auto;
+}
+header .search-on .searchBox-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+header .search-on .searchBox-form input[type="text"] {
+    margin-left: 14px;
+    padding-bottom: 4px;
+    color: var(--white-color);
+    background: none;
+    border-bottom: 1px solid var(--grey-light-color);
+    outline: none;
 }
 
 /* Video Player */
@@ -74,7 +100,7 @@ header .icons button {
     color: var(--grey-dark-color);
 }
 .infoWrap .video-content .info .viewDate .secondary-text ~ .secondary-text::before {
-    content: '•';
+    content: "\002022";
     margin: 0 4px;
 }
 .infoWrap .video-content .actions {
@@ -192,7 +218,11 @@ header .icons button {
     padding: 0 var(--spacing);
 }
 .upNext ul .item .item-info .item-headline {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
     font-size: var(--font-medium);
+    overflow: hidden;
 }
 .upNext ul .item .item-info .sub-head {
     display: flex;
@@ -239,4 +269,77 @@ header .icons button {
 }
 .comments-wrap .comment .commenting .comment-form .comment-box button[type="submit"] {
     color: var(--blue-color);
+}
+.comments-wrap .watch-next-results {
+    display: none;
+}
+.comments-wrap .watch-next-results .comment-thread-renderer {
+    padding-bottom: var(--spacing);
+    margin: var(--spacing);
+    display: flex;
+    border-bottom: 1px solid var(--grey-light-color);
+}
+.comments-wrap .watch-next-results .comment-thread-renderer a {
+    min-width: 48px;
+    min-height: 48px;
+    display: inline-block;
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content {
+    align-self: center;
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content .user-name {
+    font-size: var(--font-small);
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content .user-txt {
+    margin: 4px 0;
+    font-size: var(--font-medium);
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content ul {
+    display: flex;
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content ul li {
+    font-size: 0.6875rem;
+    color: var(--grey-dark-color);
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content ul li ~ li {
+    margin-right: 10px;
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content ul li button {
+    color: var(--grey-dark-color);    
+}
+.comments-wrap .watch-next-results .comment-thread-renderer .comment-content ul .comment-time::after {
+    content: "\002022";
+    margin: 0 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .contents {
+        display: flex;
+        flex-direction: column;
+        margin-right: 280px;
+    }
+    .upNext {
+        position: fixed;
+        right: 0;
+        top: 48px;
+        bottom: 0;
+        width: 256px;
+        overflow-y: auto;
+    }
+    .upNext ul .item a {
+        flex-direction: column;
+    }
+    .upNext ul .item .thoumb img {
+        width: 100%;
+        height: auto;
+    }
+    .upNext ul .item .item-info {
+        padding: 8px 0 0 0;
+    }
+    .upNext ul .item .item-info .item-headline {
+        -webkit-line-clamp: 2;
+    }
+    .comments-wrap .comment {
+        border-top: none;
+    }
 }

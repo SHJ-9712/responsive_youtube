@@ -21,6 +21,7 @@
 .blind {position:absolute; clip:rect(0 0 0 0); width:1px; height:1px; margin:-1px; overflow:hidden}
 .font-icon {width: 24px; height: 100%; display: inline-block; transition: transform 0.2s;}
 .more-btn {transform: rotate(180deg);}
+.none {display: none !important;}
 .block {display: block !important;}
 .flex {display: flex !important;}
 .profile-icon {margin-right: var(--spacing);}
